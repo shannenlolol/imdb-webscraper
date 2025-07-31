@@ -1,6 +1,6 @@
 # IMDb Web Scraper
 
-This project is a web application that scrapes IMDb's list of the top 10 most popular movies using Selenium and visualises the top 5's rating and vote count trends over time. It is built with a Python Flask backend and a React.js frontend, using Pandas for data transformation and Recharts for visualisation.
+This project is a web application that scrapes [IMDb's list of the most popular movies](https://www.imdb.com/chart/moviemeter/) using Selenium and visualises the top 10 movies and the top 5's rating and vote count trends over time. It is built with a Python Flask backend and a React.js frontend, using Pandas for data transformation and Recharts for visualisation.
 
 ---
 
@@ -18,11 +18,19 @@ The scraper collects key movie data such as:
 - IMDb Link
 
 The frontend displays:
-
 - A ranked top 10 movie list
-- Line charts showing IMDb rating and vote count over time
+
+![Top10 Movies Screenshot](assets/top10_screenshot.png)
+
+- Line charts showing IMDb rating and vote count over time, with specific values showing upon hovering data points
+
+
+![Charts Screenshot](assets/charts_screenshot.png)
+
 - "Last scraped at" timestamp
 - A Scrape button to trigger the backend
+
+
 
 ---
 
@@ -68,7 +76,7 @@ This will launch the API at http://localhost:5000
 ```bash
 cd ../frontend
 npm install
-npm run dev
+npm start
 ```
 The frontend will start at http://localhost:3000
 
